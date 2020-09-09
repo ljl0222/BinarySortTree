@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Electron Main",
+            "runtimeExecutable": "C:/Users/10212/AppData/Roaming/npm/electron", // 默认启动的是项目下的 electron 模块
+            "runtimeArgs": [
+                "."
+            ],
+            "program": "${workspaceFolder}/js/main.js"
+        }
+    ]
+  }
