@@ -64,18 +64,18 @@
 <body>
     
     <h2>树形结构展示</h2>
-    <canvas id="gameView" style="background-color:#e8e8ff"> </canvas>
+    <canvas id="ShowTree" style="background-color:#e8e8ff"> </canvas>
 
     
     <div class="inputText">
-        <input id="numbertext" placeholder="请用,(英文逗号)分割数字" value="62,58,88,47,73,99,35,51,93,29,37,49">
+        <input id="numbertext" placeholder="请输入节点数字" value="62,58,88,47,73,99,35,51,93,29,37,49">
         <button id = "mybutton" type="button" onclick="AddAllNumber()">增加节点</button>
     </div>
     <div class="tipsText">
         <h4>Tips</h4>
         <ul>
             <li>建议最大化程序界面后再使用；</li>
-            <li>请用,(英文逗号)分割数字，可以同时支持输入一个数字或多个数字；</li>
+            <li>请用<strong>英文逗号</strong>分割数字，可以同时支持输入一个数字或多个数字(仅限于三位数以内)；</li>
             <li>单击某个节点会选中目标节点(文本颜色亮显)，再次点击被选中的节点会删除节点；</li>
             <li>若因为树的深度过大导致界面无法容纳整个排序树，可以通过缩小界面(快捷键ctrl+'-')或拖动程序中的滚轮来浏览完整的结构；</li>
             <li>本程序预设有部分节点。</li>
@@ -83,8 +83,9 @@
     </div>
     
     <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
-    <script src="BinaryTree.js"></script>
-    <script src="app.js"></script>
+    <script src="BinarySortTree.js"></script>
+    <script src="Data.js"></script>
+    <script src="DrawTree.js"></script>
 
     <script>
         var mybutton = document.getElementById("mybutton");
